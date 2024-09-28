@@ -1,0 +1,20 @@
+[
+
+    {
+        "name": "email",
+        "img": "/footer/email.svg",
+        "link": "https://github.com/GustavoPisanello"
+    },
+
+    {
+        "name": "github",
+        "img": "/footer/github.svg",
+        "link": "https://github.com/GustavoPisanello"
+    },
+
+    {
+        "name": "linkedin",
+        "img": "/footer/linkedin.svg",
+        "link": "https://linkedin.com/in/gustavo-pisanello"
+    }
+]

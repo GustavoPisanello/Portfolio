@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: JockeyOne;
+    src: url("./assets/fonts/Jockey_One/JockeyOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: JockeyOne;
+    src: url("./assets/fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf");
+}
