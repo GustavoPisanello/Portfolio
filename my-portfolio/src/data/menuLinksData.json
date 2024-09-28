@@ -1,21 +1,26 @@
 [
     {
+        "id": 1,
         "name": "Home",
         "link": "/"
     },
     {
+        "id": 1,
         "name": "About",
         "link": "/penis"
     },
     {
+        "id": 1,
         "name": "Skills",
         "link": "/penis"
     },
     {
+        "id": 2,
         "name": "Contact",
         "link": "/penis"
     },
     {
+        "id": 2,
         "name": "Projects",
         "link": "/penis"
     }

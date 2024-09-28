@@ -12,7 +12,7 @@ export default function MobileMenu({isOpen}){
                         isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                     } overflow-hidden`}
                 >
-                    <ul className='flex justify-between pl-10'>
+                    <ul className='flex flex-wrap gap-x-6 justify-between pl-10'>
                         <MobileMenuItem data={menuData} isOpen={isOpen} />
                     </ul>
                 </nav>
