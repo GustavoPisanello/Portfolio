@@ -34,10 +34,8 @@ function App() {
 			</div>
 
 		{/* Normal divs */}
-			<div className='flex items-start gap-x-4'>
-				<HamburgerMenuButton toggleMenu={toggleMenu} isOpen={isOpen}/>
-				<MobileMenu isOpen={isOpen}/>
-			</div>
+			<HamburgerMenuButton toggleMenu={toggleMenu} isOpen={isOpen}/>
+			<MobileMenu isOpen={isOpen}/>
 
 			<div className='w-screen h-screen flex z-10'>
 				<Outlet/>
