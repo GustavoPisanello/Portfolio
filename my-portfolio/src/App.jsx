@@ -38,7 +38,9 @@ function App() {
 			<MobileMenu isOpen={isOpen}/>
 
 			<div className='w-screen h-screen flex z-10'>
-				<Outlet/>
+				<div className="w-full h-full pb-16 ">
+					<Outlet/>
+				</div>
 			</div>
     </main>
     </>

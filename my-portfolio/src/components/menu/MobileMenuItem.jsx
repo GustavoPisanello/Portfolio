@@ -41,17 +41,16 @@ export default function MobileMenuItem({ data, isOpen }) {
                 return (
                     <Link
                         key={groupIndex}
-                        className={`font-[JockeyOne] text-primary_color flex items-center transition-opacity duration-500 ${
+                        className={`font-[JockeyOne] py-3 text-primary_color flex items-center transition-opacity ${
                             isOpen ? 'opacity-100' : 'opacity-0'
                         }`}
                         to={group.link}
                     >
-                        {/* Mostra as letras uma a uma na horizontal */}
                         <p className="flex">
                             {group.name.split("").map((letter, index) => (
                                 <span
                                     key={index}
-                                    className={`inline-block transition-opacity duration-500 ${
+                                    className={`inline-block transition-opacity ${
                                         index < lettersVisible ? 'opacity-100' : 'opacity-0'
                                     }`}
                                 >
