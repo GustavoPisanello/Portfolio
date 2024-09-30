@@ -14,13 +14,13 @@ export default function MobileMenu({isOpen}){
                         isOpen ? ' opacity-100' : 'max-h-0 opacity-0'
                     } overflow-hidden`}
                 >
-                    <ul className='flex flex-wrap gap-x-6 justify-between pl-10'>
+                    <ul className='flex flex-wrap gap-x-6 justify-evenly mt-2 pl-10'>
                         <MobileMenuItem data={menuSt} isOpen={isOpen} />
                     </ul>
                 </nav>
-                <nav className={`bg-secondary_color absolute z-20 w-fit rotate-[270deg] flex flex-col -ml-10 top-24 transition-all duration-[1.2s]
+                <nav className={` absolute z-20 rotate-[270deg] flex flex-col -ml-14 top-24 px-4 rounded-xl transition-all duration-[1.2s]
                      ${isOpen ? ' opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
-                    <ul className='justify-between flex gap-x-8'>
+                    <ul className='justify-evenly flex gap-x-12 py-6'>
                         <MobileMenuItem data={menuNd} isOpen={isOpen} />
                     </ul>
                 </nav>

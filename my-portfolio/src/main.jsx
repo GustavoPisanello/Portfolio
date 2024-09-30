@@ -1,15 +1,21 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './pages/home/Home'
+import Home from './pages/Home'
 import App from './App'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import MyProject from './pages/MyProject'
 
 const router = createBrowserRouter([
   {
     element: <App/>,
     path: "/",
     children: [
-      {index: true, element: <Home/>}
+      {index: true, element: <Home/>},
+      {path: "/About", element: <About/>},
+      {path: "/Projects", element: <Projects/>},
+      {path: "/MyProject/:id", element: <MyProject/>}
     ]
   }
 ]) 

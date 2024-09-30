@@ -5,8 +5,8 @@ export default function FooterItems({data}){
         <>
             <div className="flex gap-x-5">   
                 {
-                    data.map(item => (
-                        <Link className="flex items-center z-20" to={item.link}><img src={item.img} alt="" /></Link>
+                    data.map((item, index) => (
+                        <Link key={index} className="flex items-center z-20" to={item.link}><img src={item.img} alt="" /></Link>
                     ))
                 }
             </div>
