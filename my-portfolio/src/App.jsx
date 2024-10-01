@@ -8,14 +8,13 @@ import FooterData from '../src/data/footerData.json'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isPrimary, setIsPrimary] = useState(false)
 
-  // Usar useLocation para pegar a rota atual
   const location = useLocation();
 
-  // Função que retorna o título com base na rota
   const getPageTitle = () => {
     switch (location.pathname) {
+	case "/":
+		return "Home"
     case '/About':
         return 'About';
     case '/Contact':
@@ -23,18 +22,16 @@ function App() {
 	case '/Projects':
 		return "Projects";
 	case "/MyProject/:id":
-		return "My project"
+		return "Home";
+	case "/Skills":
+		return "Skills";
 	default:
-		return "Home"
+		return "My project"
     }
   }
 
   const toggleMenu = () => {
     setIsOpen(prev => !prev)
-  }
-
-  const toggleColors = () => {
-    setIsPrimary(prev => !prev)
   }
 
   return (

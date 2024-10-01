@@ -6,13 +6,12 @@ export default function MobileMenuItem({ data, isOpen }) {
 
     useEffect(() => {
         if (isOpen) {
-            setVisibleWords([]); // Limpa as palavras visíveis ao abrir
+            setVisibleWords([]);
             data.forEach((group, groupIndex) => {
-                const word = group.name; // Nome completo da palavra
+                const word = group.name; 
                 word.split("").forEach((letter, index) => {
                     setTimeout(() => {
                         setVisibleWords((prev) => {
-                            // Exibe a palavra quando todas as letras estão visíveis
                             const wordVisible = prev.find(item => item.groupIndex === groupIndex);
                             if (!wordVisible) {
                                 return [...prev, { groupIndex, lettersVisible: index + 1 }];
@@ -24,11 +23,11 @@ export default function MobileMenuItem({ data, isOpen }) {
                                 );
                             }
                         });
-                    }, index * 150); // Atraso entre as letras
+                    }, index * 150); 
                 });
             });
         } else {
-            setVisibleWords([]); // Esconde todas as palavras ao fechar
+            setVisibleWords([]); 
         }
     }, [isOpen, data]);
 

@@ -6,6 +6,8 @@ import App from './App'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import MyProject from './pages/MyProject'
+import Contact from './pages/Contact'
+import Skills from './pages/Skills'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,9 @@ const router = createBrowserRouter([
       {index: true, element: <Home/>},
       {path: "/About", element: <About/>},
       {path: "/Projects", element: <Projects/>},
-      {path: "/MyProject/:id", element: <MyProject/>}
+      {path: "/MyProject/:id", element: <MyProject/>},
+      {path: "Contact", element: <Contact/>},
+      {path: "Skills", element: <Skills/>}
     ]
   }
 ]) 

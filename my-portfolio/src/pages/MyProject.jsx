@@ -14,7 +14,7 @@ export default function MyProject(){
                     <div className="h-3/4">
                         <img src={`/${project.img}`} alt="" className="w-full h-full rounded-xl border border-black" />
                     </div>
-                    <div className="h-1/4 flex gap-x-4 gap-y-2 flex-wrap justify-center items-center">
+                    <div className="h-1/4 flex gap-x-4 gap-y-2 flex-wrap justify-center items-center mt-2">
                     {
                         project.tags.map((tag, index) => {
                             tag = tag.toUpperCase();
@@ -42,7 +42,7 @@ export default function MyProject(){
 
                         return(   
                             
-                            <p style={{color: tagStyle, borderColor: tagStyle}} className={`border-2 w-fit p-2 rounded-xl font-[JockeyOne]`}>{tag}</p>
+                            <p style={{color: tagStyle, borderColor: tagStyle}} className={`border-2 w-fit px-2 rounded-xl font-[JockeyOne]`}>{tag}</p>
                             )}
                         )
                     }

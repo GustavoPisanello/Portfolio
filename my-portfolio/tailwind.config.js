@@ -11,7 +11,8 @@ export default {
       secondary_color: "#F9F6EE",
 
       black: "#000",
-      white: "#FFF"
+      white: "#FFF",
+      transparent: "#FF000000"
       
     }
   },
