@@ -18,9 +18,9 @@ export default function MobileMenu({isOpen}){
                         <MobileMenuItem data={menuSt} isOpen={isOpen} />
                     </ul>
                 </nav>
-                <nav className={` bg-secondary_color absolute z-20 rotate-[270deg] flex flex-col -ml-14 top-24 px-4 rounded-xl transition-all duration-[1.2s]
+                <nav className={` bg-secondary_color absolute z-20 rotate-[270deg] flex flex-col -ml-[4.5rem] top-28 px-4 rounded-xl transition-all duration-[1.2s]
                      ${isOpen ? ' opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
-                    <ul className='justify-evenly flex gap-x-12 py-6'>
+                    <ul className='justify-evenly flex gap-x-12 px-6'>
                         <MobileMenuItem data={menuNd} isOpen={isOpen} />
                     </ul>
                 </nav>

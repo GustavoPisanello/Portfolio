@@ -14,7 +14,7 @@ export default function MyProject(){
                     <div className="h-3/4">
                         <img src={`/${project.img}`} alt="" className="w-full h-full rounded-xl border border-black" />
                     </div>
-                    <div className="h-1/4 flex gap-x-4 gap-y-2 flex-wrap justify-center items-center mt-2">
+                    <div className="h-1/4 w-full flex gap-x-4 gap-y-2 flex-wrap justify-center items-center mt-2">
                     {
                         project.tags.map((tag, index) => {
                             tag = tag.toUpperCase();
@@ -50,7 +50,7 @@ export default function MyProject(){
                 </div>
             </div>
             <div className="h-1/2 flex justify-center">
-                <div className="w-[85%] flex flex-col gap-y-8">
+                <div className="w-[85%] flex flex-col gap-y-8 max-w-[505px]">
                     <div className="text-center mt-4 flex flex-col gap-y-1">
                         <h1 className='font-[JockeyOne] text-white text-4xl'>{project.name}</h1>
                         <p className='font-[JockeyOne] text-white text-base'>{project.subtitle}</p>

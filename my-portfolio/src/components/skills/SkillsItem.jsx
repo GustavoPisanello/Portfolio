@@ -1,7 +1,7 @@
 export default function SkillsItem({color, img}){
     return (
         <>
-         <div className={`w-[75%] p-6 border gap-y-4 rounded-2xl flex flex-col`} style={{borderColor: color}}>
+         <div className={`w-[75%] p-6 max-w-[430px] border gap-y-4 rounded-2xl flex flex-col`} style={{borderColor: color}}>
                 <div className="w-full flex justify-between">
                     <div className="w-10">
                         <img className={`w-full fill-${color}`} src={img} alt="" />

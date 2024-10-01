@@ -41,7 +41,7 @@ export default function MobileMenuItem({ data, isOpen }) {
                     <Link
                         key={groupIndex}
                         className={`font-[JockeyOne] py-3 text-primary_color flex items-center transition-opacity ${
-                            isOpen ? 'opacity-100' : 'opacity-0'
+                            isOpen ? 'opacity-100' : 'hidden'
                         }`}
                         to={group.link}
                     >

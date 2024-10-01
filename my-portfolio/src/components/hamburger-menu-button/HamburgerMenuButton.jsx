@@ -26,7 +26,7 @@ export default function HamburgerMenuButton({toggleMenu, isOpen}){
 
     return (
         <>
-            <button ref={buttonRef} className="w-fit absolute rounded-sm cursor-pointer hamburger-menu-button z-30" aria-controls='primary-navigation' aria-expanded='false'>
+            <button ref={buttonRef} className="lg:hidden w-fit absolute left-2 rounded-sm cursor-pointer hamburger-menu-button z-30" aria-controls='primary-navigation' aria-expanded='false'>
                 <svg className='fill-none svg-burger' viewBox='-10 -10 120 120' width='50'>
                     <path className="stroke-primary_color line" strokeWidth='10' strokeLinecap="round" strokeLinejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"></path>
                 </svg>
