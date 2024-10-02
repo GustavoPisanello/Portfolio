@@ -1,8 +1,10 @@
 import SkillsItem from "../components/skills/SkillsItem";
-import img1 from "/Skills/Code1.svg"
-import img2 from "/Skills/Code2.svg"
+import skillsData from "../data/skillsData.json"
 
 export default function Skills(){
+
+    const data = skillsData;
+
     return (
         <>
         <div className='absolute left-1/2 bottom-1/2 hidden lg:block -ml-1'>
@@ -13,12 +15,7 @@ export default function Skills(){
 		</div>
 
         <div className="h-full lg:flex flex-row-reverse lg:items-center">
-            <div className="h-1/2 w-full flex flex-col justify-center items-center">
-                <SkillsItem color="primary-color" img={img2}/>
-            </div>
-            <div className="h-1/2 w-full flex flex-col justify-center items-center">
-                <SkillsItem color="secondary_color" img={img1}/>
-            </div>
+            <SkillsItem data={data}/>
         </div>
         </>
     )

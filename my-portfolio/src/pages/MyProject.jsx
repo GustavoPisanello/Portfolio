@@ -10,13 +10,15 @@ export default function MyProject(){
 
     return (
         <>
-        <div className='h-full w-full lg:flex lg:flex-row-reverse'>
+        <div className='h-full w-full lg:flex lg:flex-row-reverse relative'>
+        <Link className="absolute left-[54.2%] bottom-[5%] px-4 py-3 rounded-xl border-2 border-black text-primary_color_color bg-secondary_color font-medium hover:bg-primary_color hover:text-secondary_color w-fit hover:shadow-sm hover:shadow-[#4a4a4a] transition-all duration-300" to={project.link}>Visit Website</Link>
+
             <div className="h-1/2 lg:h-full lg:w-1/2 w-full flex flex-col justify-center items-center">
                 <div className="max-w-[85%] h-[85%] lg:flex lg:flex-col lg:gap-y-6 lg:justify-center">
                     <div className="h-3/4 lg:h-1/2 relative">
-                        <img src={`/${project.img}`} alt="" className="w-full h-full rounded-xl border border-black" />
+                        <img src={`/${project.img}`} alt="" className="w-full h-full rounded-xl border-4 border-black" />
                         <div className='absolute bottom-4 right-4 w-10'>
-                            <Link to={project.link}><img className="w-full" src="/footer/github3.svg" alt="" /></Link>
+                            <Link to={project.gitLink}><img className="w-full" src="/footer/github3.svg" alt="" /></Link>
                         </div>
                     </div>
                     
@@ -43,7 +45,14 @@ export default function MyProject(){
                                     tagStyle = "#2785FF";
                                     break;
                                 case "TAILWIND":
-                                    tagStyle = "#83B9FF";             
+                                    tagStyle = "#83B9FF";
+                                    break;
+                                case "VITE":
+                                    tagStyle = "#3B0153";   
+                                    break;        
+                                case "GS WINNER":
+                                    tagStyle = "#461f24";
+                                    break;
                             }
 
                         return(   

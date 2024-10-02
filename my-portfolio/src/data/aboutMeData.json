@@ -1,0 +1,14 @@
+[
+    {
+        "text": "When I'm not coding, I enjoy playing games and cooking. I'm always eager to learn and grow, keeping up-to-date with the latest trends in technology to continuously refine my craft. Feel free to explore my portfolio and reach out if you'd like to collaborate or learn more about my work!",
+        "bgColor": "primary_color",
+        "color": "secondary_color",
+        "style": "start"
+    },
+    {
+        "text": "Hello! I'm a passionate full-stack developer with a strong focus on web development. I specialize in both front-end and back-end technologies, enabling me to build seamless, responsive, and efficient applications. With a background in Etec Basilides de Godoy and FIAP, I have honed my skills in HTML, CSS, JS, Java, C#, SQL and much more.",
+        "bgColor": "secondary_color",
+        "color": "primary_color",
+        "style": "end"
+    }
+]

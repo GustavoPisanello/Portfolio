@@ -1,14 +1,15 @@
 [
     {
         "id": 1,
-        "style": 1,
+        "style": 2,
         "name": "Clone Airbnb",
         "tag": "WEB",
         "tags" : ["HTML", "CSS", "VANILLA"],
-        "subtitle": "Site clone do Airbnb, feito para fins educacionais",
-        "description": "A clone website of the leading home rental brand for accommodations: Airbnb. The site was cloned for educational purposes, focusing on HTML and CSS, particularly the Grid Layout.",
+        "subtitle": "Polly Pocket's page on Airbnb",
+        "description": "A clone website of the leading home rental brand for accommodations: Airbnb. The site was cloned for educational purposes, focusing on HTML and CSS, particularly the Grid Layout. This project also wins the Global Solution premiation in FIAP",
         "img": "projects/CloneAirbnb.png",
-        "link": "https://github.com/CloneAirbnb/CloneAirbnb.github.io"
+        "gitLink": "https://github.com/CloneAirbnb/CloneAirbnb.github.io",
+        "link": "https://cloneairbnb.github.io"
     },
     {
         "id": 2,
@@ -16,28 +17,34 @@
         "name": "Organizarty OnePage",
         "tag": "WEB",
         "tags" : ["HTML", "CSS", "VANILLA"],
-        "subtitle": "Site OnePage da Organizarty",
-        "description": "",
-        "img": "projects/CloneAirbnb.png"
+        "subtitle": "Organizarty's OnePage site",
+        "description": "A one-page website for my fictional party-hiring company, Organizarty. It was created as part of my final project for the third year of my technical system development course, integrated with my high school studies. The website features creative elements like the parallax effect, side-scrolling models, and animations.",
+        "img": "projects/Organizarty.png",
+        "gitLink": "https://github.com/GustavoPisanello/Organizarty_OnePage",
+        "link": "https://organizarty-one-page.vercel.app/"
     },
     {
-        "id": 1,
-        "style": 2,
-        "name": "Organizarty OnePage",
+        "id": 3,
+        "style": 1,
+        "name": "SAVE Project",
         "tag": "WEB",
-        "tags" : ["HTML", "CSS", "VANILLA"],
-        "subtitle": "Site OnePage da Organizarty",
-        "description": "",
-        "img": "projects/CloneAirbnb.png"
+        "tags" : ["HTML", "CSS", "VANILLA", "GS Winner"],
+        "subtitle": "SAVE Project website",
+        "description": "The SAVE project was born to meet a challenge presented by Oceans20, a community engagement group. Oceans20 tasked my team and me with contributing innovative technological and creative solutions to help prevent water pollution.",
+        "img": "projects/SAVE_Project.png",
+        "gitLink": "https://github.com/SaveProject-GS/SaveProject-GS.github.io",
+        "link": "https://saveproject-gs.github.io/"
     },
     {
-        "id": 2,
-        "style": 2,
-        "name": "Organizarty OnePage",
+        "id": 4,
+        "style": 1,
+        "name": "My Portfolio",
         "tag": "WEB",
-        "tags" : ["HTML", "CSS", "VANILLA"],
-        "subtitle": "Site OnePage da Organizarty",
-        "description": "",
-        "img": "projects/CloneAirbnb.png"
+        "tags" : ["HTML", "CSS", "JS", "REACT", "TAILWIND", "VITE"],
+        "subtitle": "My Portfolio web page",
+        "description": "Well... This site is a portfolio too, isn't it?",
+        "img": "projects/MyPortfolio.png",
+        "gitLink": "https://github.com/GustavoPisanello/Portfolio",
+        "link": ""
     }
 ]

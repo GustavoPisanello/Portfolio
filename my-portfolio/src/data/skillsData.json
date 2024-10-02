@@ -1,0 +1,13 @@
+[
+    {
+        "text": "I am skilled in working with databases such as SQL Server and MySQL, ensuring data integrity and optimizing performance. I am also proficient in version control tools like Git and GitHub, which allow me to facilitate smooth collaboration and manage projects efficiently. Additionally, I excel in problem-solving and debugging, consistently identifying issues and implementing effective, long-term solutions.",
+        "color": "primary-color",
+        "img": "/Skills/Code2.svg"
+    },
+    {
+        "text": "As a full-stack developer, I have developed a diverse set of skills in both front-end and back-end development. My expertise includes several programming languages, such as HTML, CSS, JavaScript, Java, C#, SQL, and Python, allowing me to efficiently create and maintain both client-side and server-side code. I am also experienced in frameworks and libraries like React and Node.js, which I use to build responsive, dynamic web applications.",
+        "color": "secondary_color",
+        "img": "/Skills/Code1.svg"
+    }
+    
+]

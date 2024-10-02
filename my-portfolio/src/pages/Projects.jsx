@@ -21,7 +21,7 @@ export default function Projects(){
                     <ProjectItem data={dataProjStStyle}/>
                 </div>
             </div>
-            <div className="h-1/2 w-full lg:h-full lg:w-1/2 flex lg:flex-col justify-center items-center pl-6">
+            <div className="h-1/2 w-full lg:h-full lg:w-1/2 flex lg:flex-col justify-center items-center lg:pl-6">
                 <div className="max-w-[85%] h-[85%] flex lg:flex-col gap-y-12 gap-x-12 overflow-x-auto">
                     <ProjectItem data={dataProjNdStyle}/>
                 </div>
