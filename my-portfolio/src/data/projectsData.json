@@ -7,6 +7,27 @@
         "tags" : ["HTML", "CSS", "VANILLA"],
         "subtitle": "Site clone do Airbnb, feito para fins educacionais",
         "description": "A clone website of the leading home rental brand for accommodations: Airbnb. The site was cloned for educational purposes, focusing on HTML and CSS, particularly the Grid Layout.",
+        "img": "projects/CloneAirbnb.png",
+        "link": "https://github.com/CloneAirbnb/CloneAirbnb.github.io"
+    },
+    {
+        "id": 2,
+        "style": 2,
+        "name": "Organizarty OnePage",
+        "tag": "WEB",
+        "tags" : ["HTML", "CSS", "VANILLA"],
+        "subtitle": "Site OnePage da Organizarty",
+        "description": "",
+        "img": "projects/CloneAirbnb.png"
+    },
+    {
+        "id": 1,
+        "style": 2,
+        "name": "Organizarty OnePage",
+        "tag": "WEB",
+        "tags" : ["HTML", "CSS", "VANILLA"],
+        "subtitle": "Site OnePage da Organizarty",
+        "description": "",
         "img": "projects/CloneAirbnb.png"
     },
     {

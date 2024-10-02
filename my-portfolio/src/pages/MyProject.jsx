@@ -1,6 +1,7 @@
 import {Link, useParams} from 'react-router-dom'
 import projectData from '../data/projectsData.json'
 
+
 export default function MyProject(){
 
     const {id} = useParams()
@@ -9,12 +10,17 @@ export default function MyProject(){
 
     return (
         <>
-            <div className="h-1/2 w-full flex flex-col justify-center items-center">
-                <div className="max-w-[85%] h-[85%]">
-                    <div className="h-3/4">
+        <div className='h-full w-full lg:flex lg:flex-row-reverse'>
+            <div className="h-1/2 lg:h-full lg:w-1/2 w-full flex flex-col justify-center items-center">
+                <div className="max-w-[85%] h-[85%] lg:flex lg:flex-col lg:gap-y-6 lg:justify-center">
+                    <div className="h-3/4 lg:h-1/2 relative">
                         <img src={`/${project.img}`} alt="" className="w-full h-full rounded-xl border border-black" />
+                        <div className='absolute bottom-4 right-4 w-10'>
+                            <Link to={project.link}><img className="w-full" src="/footer/github3.svg" alt="" /></Link>
+                        </div>
                     </div>
-                    <div className="h-1/4 w-full flex gap-x-4 gap-y-2 flex-wrap justify-center items-center mt-2">
+                    
+                    <div className="h-1/4 lg:h-fit w-full flex gap-x-4 gap-y-2 flex-wrap justify-center items-center mt-2">
                     {
                         project.tags.map((tag, index) => {
                             tag = tag.toUpperCase();
@@ -49,21 +55,26 @@ export default function MyProject(){
                     </div>
                 </div>
             </div>
-            <div className="h-1/2 flex justify-center">
-                <div className="w-[85%] flex flex-col gap-y-8 max-w-[505px]">
-                    <div className="text-center mt-4 flex flex-col gap-y-1">
+            
+            <div className="h-1/2 lg:h-full lg:w-1/2 flex justify-center lg:items-center">
+                <div className="w-[85%] lg:w-full flex flex-col gap-y-8 max-w-[505px] lg:max-w-full">
+                    <div className="text-center lg:text-end px-10 mt-4 flex flex-col gap-y-1">
                         <h1 className='font-[JockeyOne] text-white text-4xl'>{project.name}</h1>
                         <p className='font-[JockeyOne] text-white text-base'>{project.subtitle}</p>
                     </div>
-                    <div>
-                        <p className='text-sm text-secondary_color text-justify font-[Fredoka]'>{project.description}</p>
+                    <div className='lg:w-full flex lg:justify-end'>
+                        <p className='text-sm text-secondary_color lg:w-1/2 text-justify font-[Fredoka] lg:mr-10'>{project.description}</p>
                     </div>
-                    <Link to="/Projects" className='w-8'>
-                        <img src="/projects/seta.svg" className="w-full" alt="" />
-                    </Link>
+                    <div className="lg:w-full flex lg:justify-center lg:-ml-6">
+                        <div className='w-8'>
+                            <Link to="/Projects" className='w-8'>
+                                <img src="/projects/seta.svg" className="w-full" alt="" />
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+        </div>
         </>
     )
 }

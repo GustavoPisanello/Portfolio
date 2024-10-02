@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.active{
+    border-bottom: 2px solid white;
+}
+
+::-webkit-scrollbar{
+    overflow-y: hidden;
+}
+
 @font-face {
     font-family: JockeyOne;
     src: url("./assets/fonts/Jockey_One/JockeyOne-Regular.ttf");

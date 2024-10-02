@@ -10,7 +10,7 @@ export default function MobileMenu({isOpen}){
         return (
             <>
                 <nav
-                    className={`bg-secondary_color z-20 w-full px-5 pb-4 fixed right-0 transition-all duration-[1.2s] ${
+                    className={`bg-secondary_color lg:hidden z-20 w-full px-5 pb-4 fixed right-0 transition-all duration-[1.2s] ${
                         isOpen ? ' opacity-100' : 'max-h-0 opacity-0'
                     } overflow-hidden`}
                 >

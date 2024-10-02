@@ -5,6 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import './index.css'
 import FooterItems from './components/footer/FooterItems';
 import FooterData from '../src/data/footerData.json'
+import DesktopMenu from './components/menu/DesktopMenu';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,29 +39,46 @@ function App() {
     <>
     <main className="flex flex-col w-screen h-screen relative">
 		{/* Fixed and absolute divs */}
-			<div className="w-full lg:w-1/2 lg:h-full h-1/2 right-0 bg-secondary_color fixed"></div>
-			<div className="w-full h-1 lg:w-1 lg:h-full lg:hidden bg-black z-10 absolute bottom-[50%] lg:bottom-0"></div>
-    		<div className="w-full lg:w-1/2 lg:h-full h-1/2  bg-primary_color fixed bottom-0 z-0 border-r-4 border-black"></div>
+			<div className="w-full lg:w-1/2 lg:h-full h-1/2 right-0 z-0 bg-secondary_color fixed"></div>
+			<div className="w-full h-1 lg:w-1 lg:h-full bg-black lg:left-1/2 z-10 absolute bottom-[50%] lg:bottom-0"></div>
+    		<div className="w-full lg:w-1/2 lg:h-full h-1/2  bg-primary_color fixed bottom-0 z-0"></div>
+
+			{/* Desktop Menu */}
+			<div className='h-full hidden lg:flex  items-center z-20 absolute left-6'>
+				<DesktopMenu/>
+				<div className='h-[60%] border border-secondary_color ml-4'></div>
+			</div>
+
+			{/* Signments */}
+			
 			<div className="absolute bottom-5 right-3 w-8">
 				<img src="/logo/Sign.svg" className="w-full" alt="" />
 			</div>
-			<div className="absolute bottom-5 left-5 lg:right-5">
+			<div className="absolute top-4 right-4 w-24 hidden lg:block">
+				<img src="/footer/Sign2.svg" className="w-full" alt="" />
+			</div>
+
+			{/* Footers */}
+			<div className="absolute bottom-5 left-5 lg:hidden">
+				<FooterItems data={FooterData}/>
+			</div>
+			<div className="absolute bottom-5 right-5 hidden z-20 lg:block">
 				<FooterItems data={FooterData}/>
 			</div>
 
 		{/* Normal divs */}
-			<div className="flex z-20 items-center py-4">
+			<div className="flex z-20 items-center py-4 lg:hidden">
 				<HamburgerMenuButton toggleMenu={toggleMenu} isOpen={isOpen}/>
 				<MobileMenu isOpen={isOpen}/>
 				<div className='w-full'>
-					<h1 className='text-3xl text-center font-bold font-[Fredoka] text-primary_color'>
+					<h1 className='text-3xl text-center font-bold font-[Fredoka] text-primary_color lg:hidden'>
 						{getPageTitle()}
 					</h1>
 				</div>
 			</div>
 
-			<div className='w-screen h-screen flex z-10 overflow-hidden'>
-				<div className="w-full h-full pb-[68px] ">
+			<div className='w-screen h-screen flex lg:justify-center z-10 overflow-hidden'>
+				<div className="w-full lg:w-[80%] h-full lg:pb-0 pb-[68px] ">
 					<Outlet/>
 				</div>
 			</div>
