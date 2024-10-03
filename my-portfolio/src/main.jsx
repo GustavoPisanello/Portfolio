@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import MyProject from './pages/MyProject'
 import Contact from './pages/Contact'
 import Skills from './pages/Skills'
+import PageNotFound from './pages/PageNotFound'
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
       {path: "/Projects", element: <Projects/>},
       {path: "/MyProject/:id", element: <MyProject/>},
       {path: "Contact", element: <Contact/>},
-      {path: "Skills", element: <Skills/>}
+      {path: "Skills", element: <Skills/>},
+      {path: "*", element: <PageNotFound/>}
     ]
   }
 ]) 
