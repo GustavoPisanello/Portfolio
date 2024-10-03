@@ -8,5 +8,7 @@ O site usa a biblioteca 'react-router-dom' para rotas dinâmicas, 'useState' par
 
 O footer também dispõe de um ícone retirado de uma biblioteca REACT. <br>
 
+link do site no vercel: <br>
+
 Nome: Gustavo Laur Pisanello | RM: 556603
 
