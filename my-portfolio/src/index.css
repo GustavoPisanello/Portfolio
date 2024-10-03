@@ -11,6 +11,20 @@
     overflow-y: hidden;
 }
 
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  .arrow-container:hover .arrow {
+    animation: bounce 0.5s infinite; 
+  }
+  
+
 @font-face {
     font-family: JockeyOne;
     src: url("./assets/fonts/Jockey_One/JockeyOne-Regular.ttf");

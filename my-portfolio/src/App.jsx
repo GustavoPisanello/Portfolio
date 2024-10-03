@@ -6,6 +6,8 @@ import './index.css'
 import FooterItems from './components/footer/FooterItems';
 import FooterData from '../src/data/footerData.json'
 import DesktopMenu from './components/menu/DesktopMenu';
+import { GoArrowDown } from "react-icons/go";
+import { GoArrowLeft } from "react-icons/go";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,12 +61,15 @@ function App() {
 			</div>
 
 			{/* Footers */}
-			<div className="absolute bottom-5 left-5 lg:hidden">
+			<div className="absolute bottom-5 flex items-center gap-x-6 left-5 lg:hidden">
 				<FooterItems data={FooterData}/>
+				<GoArrowLeft className="arrow" size={20} style={{color: "#F9F6EE"}}/>
 			</div>
-			<div className="absolute bottom-5 right-5 hidden z-20 lg:block">
-				<FooterItems data={FooterData}/>
+			<div className="absolute bottom-5 flex-col items-center right-5 gap-y-6 hidden z-20 lg:flex arrow-container">
+  				<GoArrowDown className="arrow" style={{color: "#2B3B52"}} size={35}/>
+  				<FooterItems data={FooterData}/>
 			</div>
+
 
 		{/* Normal divs */}
 			<div className="flex z-20 items-center py-4 lg:hidden">

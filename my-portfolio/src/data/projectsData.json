@@ -46,5 +46,17 @@
         "img": "projects/MyPortfolio.png",
         "gitLink": "https://github.com/GustavoPisanello/Portfolio",
         "link": ""
+    },
+    {
+        "id": 5,
+        "style": 2,
+        "name": "FormulaBet",
+        "tag": "WEB",
+        "tags" : ["HTML", "CSS", "JS", "REACT", "TAILWIND", "VITE"],
+        "subtitle": "FormulaBet bet Page",
+        "description": "Mahindra has tasked me and my partners with an exciting mission: to boost the popularity of Formula E and bring it into the spotlight, much like Formula 1. Our solution is FormulaBet, a dynamic web-based betting platform that integrates everything a Formula E fan needs in one place. Not only does it allow users to place bets, but it also offers up-to-date news, profiles on drivers, and insider insights—empowering fans to make informed decisions.",
+        "img": "projects/FormulaBet.png",
+        "gitLink": "https://github.com/GustavoPisanello/FormulaBet",
+        "link": "https://formula-bet-site.vercel.app/"
     }
 ]
