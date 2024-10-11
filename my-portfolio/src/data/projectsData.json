@@ -6,7 +6,7 @@
         "tag": "WEB",
         "tags" : ["HTML", "CSS", "VANILLA"],
         "subtitle": "Polly Pocket's page on Airbnb",
-        "description": "A clone website of the leading home rental brand for accommodations: Airbnb. The site was cloned for educational purposes, focusing on HTML and CSS, particularly the Grid Layout. This project also wins the Global Solution premiation in FIAP",
+        "description": "A clone website of the leading home rental brand for accommodations: Airbnb. The site was cloned for educational purposes, focusing on HTML and CSS, particularly the Grid Layout.",
         "img": "projects/CloneAirbnb.png",
         "gitLink": "https://github.com/CloneAirbnb/CloneAirbnb.github.io",
         "link": "https://cloneairbnb.github.io"
@@ -30,7 +30,7 @@
         "tag": "WEB",
         "tags" : ["HTML", "CSS", "VANILLA", "GS Winner"],
         "subtitle": "SAVE Project website",
-        "description": "The SAVE project was born to meet a challenge presented by Oceans20, a community engagement group. Oceans20 tasked my team and me with contributing innovative technological and creative solutions to help prevent water pollution.",
+        "description": "The SAVE project was born to meet a challenge presented by Oceans20, a community engagement group. Oceans20 tasked my team and me with contributing innovative technological and creative solutions to help prevent water pollution. This project also wins the Global Solution premiation in FIAP",
         "img": "projects/SAVE_Project.png",
         "gitLink": "https://github.com/SaveProject-GS/SaveProject-GS.github.io",
         "link": "https://saveproject-gs.github.io/"
